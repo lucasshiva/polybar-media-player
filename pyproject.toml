@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "polybar-media-player"
+version = "0.1.0"
+description = "Display current song information on Polybar"
+authors = ["Lucas Cavalcante da Silva <silva.lucasdev@gmail.com>"]
+readme = "README.md"
+license = "LICENSE"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+polybar-media-player = "polybar_media_player.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"
